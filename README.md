@@ -7,7 +7,7 @@ This app uses the [Bolt for Slack](https://slack.dev/bolt/concepts) framework.
 ## Slack app configuration
 
 1. Create an [app](https://api.slack.com/apps) on Slack
-2. Enable 'Event Subscription`
+2. Enable `Event Subscription`
   - Subscribe to `events on behalf of a user`: `reaction_added`
 3. Add `User Token Scopes` in `OAuth & Permissions`
   - `reactions:read`
