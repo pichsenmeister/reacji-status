@@ -20,7 +20,8 @@ app.event("reaction_added", async ({ event, context }) => {
       profile: {
         status_text: `via <@${event.user}>`,
         status_emoji: `:${event.reaction}:`,
-        status_expiration: 0
+        // let status expire after 1 hour
+        status_expiration: ((new Date()).getTime()/1000)+3600
       }
     });
   }
